@@ -1,0 +1,11 @@
+#include "queue.h"
+#include <iostream>
+using namespace ds;
+using namespace std;
+int main(){
+    ds::Queue queue;
+    queue = ds::Queue();
+  //  queue.Enqueue(1);
+    std::cout <<  queue.size() << std::endl;
+    return 0;
+}

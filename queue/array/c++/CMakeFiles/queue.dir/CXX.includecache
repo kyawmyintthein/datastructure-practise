@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/trvnuc1user/proj/datastructure-practise/queue/array/c++/queue.h
+iostream
+-
+cstdlib
+-
+
+/home/trvnuc1user/proj/datastructure-practise/queue/array/c++/queue_main.cpp
+queue.h
+/home/trvnuc1user/proj/datastructure-practise/queue/array/c++/queue.h
+iostream
+-
+

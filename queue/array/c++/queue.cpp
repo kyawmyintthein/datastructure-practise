@@ -9,25 +9,49 @@ void ds::Queue::Enqueue(int item){
     if(size() == ds::MAX_SIZE){
         throw new ds::QueueOverflowException();
     }
-    data[rear] = item;
-    rear = ++rear;
+    if (isEmpty()){
+        rear = 0;
+        data[rear] = item;
+    }else{
+        rear = ++rear;
+        data[rear] = item;
+    }
 }
 
 
-int ds::Queue::Dequeue(){
+void ds::Queue::Dequeue(){
     if(isEmpty()){
         throw new ds::QueueEmptyException();
+    }else if(front == rear){
+        rear = front = -1;
+    }else{
+        if(front == -1){
+            front = 0;
+        }else{
+           front = ++front % ds::MAX_SIZE;
+        }
     }
-    int ret =data[front];
-    front = ++front;
+}
+
+int ds::Queue::Front(){
+    int ret = -1;
+    if (isEmpty()){
+        throw new ds::QueueEmptyException();
+        return ret;
+    }
+    if(front = -1){
+        ret = data[0];
+    }else{
+        ret = data[front];
+    }
     return ret;
 }
 
 int ds::Queue::size(){
-    return abs(rear - front);
+    return rear - front;
 }
 
 bool ds::Queue::isEmpty(){
-    return rear == front ? true : false;
+    return front == rear ? true : false;
 }
 

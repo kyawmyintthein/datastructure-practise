@@ -34,7 +34,8 @@ namespace ds{
         public:
             Queue();
             void Enqueue(int item);
-            int Dequeue();
+            void Dequeue();
+            int Front();
             int size();
             bool isEmpty();
     };
