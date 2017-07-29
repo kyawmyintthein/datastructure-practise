@@ -17,7 +17,6 @@ namespace ds{
             void Pop();
             int Top();
             bool isEmpty();
-            int size();
     };
 }
 

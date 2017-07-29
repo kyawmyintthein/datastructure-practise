@@ -30,6 +30,18 @@ int ds::Stack::Top(){
     return data[top];
 }
 
+bool ds::Stack::isEmpty(){
+    if (top == -1){
+        return true;
+    }
+    return false;
+}
+
+ds::Stack::~Stack(void){
+    printf("Stack destructor");
+}
+
+
 
 
 
