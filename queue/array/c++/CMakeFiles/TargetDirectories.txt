@@ -1,3 +1,0 @@
-/home/trvnuc1user/proj/datastructure-practise/queue/array/c++/CMakeFiles/edit_cache.dir
-/home/trvnuc1user/proj/datastructure-practise/queue/array/c++/CMakeFiles/rebuild_cache.dir
-/home/trvnuc1user/proj/datastructure-practise/queue/array/c++/CMakeFiles/queue.dir
